@@ -4,10 +4,880 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apari</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Apari project</h1>
+    <header class="header" id="header">
+      <div class="container-fluid header__container">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark header__nav">
+            <a class="navbar-brand" href="#">Alpari</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Данные</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Технологии</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Иенвайромент</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Обучение</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Сопровождение</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Новости</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Комьюнити</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header__title-box">
+            <h1 class="text-center display-1 mt-5 header__title">Alpari</h1>
+            <p class="text-center mt-3 mb-5 header__text">
+              мультисервисная платформа для осознанного трейдинга
+            </p>
+            <p class="text-quote text-center text-white">
+              &quot;Мы ценим время, поэтому собираем все самое важное в одном
+              месте.&quot;
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="data" id="data">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <h3 class="text-center mt-5 heading">
+              Alpari — провайдер качественных данных
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-quote text-center mt-4">
+              &quot;Успех в торговле приходит от хорошего знания рынков и еще
+              лучшего знания самих себя.&quot;
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <p class="text-justify">
+              Интересует волатильность ликвидных акций, обстановка на валютном
+              рынке, объемы торгов криптоактивами? Мы решаем проблему миллиона
+              открытых вкладок. Теперь все данные топовых финансовых рынков в
+              реальном времени вы можете найти, воспользовавшись платформой
+              Alpari.
+            </p>
+          </div>
+          <div class="col-md">
+            <p class="text-justify">
+              Но это не все. Мы заботимся о качестве предоставляемых даннных.
+              Уникальная система множественных подтверждений позволяет
+              мониторить массивный поток данных, который поступает к нам из
+              разных уголков земного шара, и предоставлять нашим клиентам только
+              проверенную информацию.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm">
+            <p class="text-justify">
+              Оставьте заявку, и наш консультант подробно расскажет о качестве
+              данных платформы Alpari.
+            </p>
+          </div>
+          <div class="col-sm d-flex justify-content-end">
+            <div>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                data-toggle="modal"
+                data-target="#myRequest"
+              >
+                Оставить заявку
+              </button>
+
+              <div class="modal" id="myRequest">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Заявка</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <form action="">
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="name1">Имя</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="name1"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="surname1">Фамилия</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                           id="surname1"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Почта</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="name@example.com"
+                          >
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Отменить
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Отправить
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="technologists" id="technologists">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <h3 class="text-center mt-5 heading">
+              Alpari — евангелист пробивных технологий
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-quote text-center mt-4">
+              &quot;Все, что у роботов получается быстрее и дешевле, в итоге
+              начнут делать роботы.&quot;
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <p class="text-justify">
+              Мы не навязываем будущее, мы адаптируем его для профессионалов,
+              внедряя самые передовые тренды финтеха и IT. Уже сейчас мы
+              используем алгоритмы машинного обучения, включая нейросети, для
+              прогнозирования движения рынков. Наши сигналы отличаются высокой
+              точностью и радуют пользователей оптимальной доходностью.
+            </p>
+          </div>
+          <div class="col-md">
+            <p class="text-justify">
+              Мы также стремимся максимально автоматизировать торговые практики
+              и рутины трейдеров, ведь одна из основных задач платформы Alpari —
+              вывести работу с финансовыми рынками на качественно новый уровень.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm">
+            <p class="text-justify">
+              Свяжитесь с нашим консультантом, чтобы узнать больше об
+              использовании новых технологий на платформе Alpari.
+            </p>
+          </div>
+          <div class="col-sm d-flex justify-content-end">
+            <div>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                data-toggle="modal"
+                data-target="#myConnect"
+              >
+                Связаться
+              </button>
+
+              <div class="modal" id="myConnect">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Связь</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <form action="">
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="name2">Имя</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="name2"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="surname2">Фамилия</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="surname2"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput2">Почта</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput2"
+                            placeholder="name@example.com"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea2">Сообщение</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Отменить
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Отправить
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="environment" id="environment">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <h3 class="text-center mt-5 heading">
+              Alpari — удобный рабочий энвайромент
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-quote text-center mt-4">
+              &quot;Бытие определеяет сознание.&quot;
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <p class="text-justify">
+              При создании оптимальной рабочей среды для трейдеров мы
+              руководствуемся двумя принципами: простотой и практичностью
+              пользовательского опыта. Мы собрали в рабочем инструментарии
+              платформы все самое необходимое для профессионального технического
+              анализа. Пользователям удобно судить о поведении цены, когда все
+              под рукой.
+            </p>
+          </div>
+          <div class="col-md">
+            <p class="text-justify">
+              На Alpari вы также можете провести глубокий анализ своих
+              портфелей. Система, оснащенная искусственным интеллектом,
+              позволяет выявить слабые звенья и диверсифицировать риски.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <p class="text-justify">Интересно?</p>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <div>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                data-toggle="modal"
+                data-target="#myRecord"
+              >
+                Регистрация
+              </button>
+
+              <div class="modal" id="myRecord">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Регистрация</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <form action="">
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="name3">Имя</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="name3"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="surname3">Фамилия</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="surname3"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput3">Почта</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput3"
+                            placeholder="name@example.com"
+                          >
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Отменить
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Отправить
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="training" id="training">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <h3 class="text-center mt-5 heading">
+              Alpari — профессиональное обучение и сертификация
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-quote text-center mt-4">
+              &quot;Тренировка не приводит к идеальным результатам, она приводит
+              к стабильным результатам.&quot;
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <p class="text-justify">
+              Скальпинг, арбитраж, деривативы, короткие позиции, продажа
+              волатильности... Хотите узнать, что это, или усовершенствовать
+              свои навыки в разных торговых техниках и стратегиях? На платформе
+              Alpari дейтсвуют постоянные онлайн-курсы и вебинары разного уровня
+              сложности. Их ведут профессиональные трейдеры, у которых за
+              плечами опыт увеличения прибыли в десятки и сотни раз. Кто как не
+              они знают всю изнанку торговли финансовыми активами.
+            </p>
+          </div>
+          <div class="col-md">
+            <p class="text-justify">
+              Но даже после прохождения обучающих курсов мы помогаем нашим
+              пользователям, предоставляя дополнительные консультации. Мы также
+              проводим сертификацию профессиональных трейдеров, открывая дорогу
+              для престижного трудоустройства.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg">
+            <p class="text-justify">
+              Записаться на курс “Быстрый старт”, а также пройти
+              экспресс-тестирование можно уже сейчас.
+            </p>
+          </div>
+          <div class="col-lg d-flex justify-content-between">
+            <div>
+              <button
+                type="button"
+                class="btn btn-info btn-sm"
+                data-toggle="modal"
+                data-target="#myTest"
+              >
+                Пройти тест
+              </button>
+
+              <div class="modal" id="myTest">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Тест</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <form action="">
+                      <div class="modal-body">
+                        <fieldset class="form-group">
+                          <div class="row">
+                            <legend class="col-form-label col-sm-4 pt-0">
+                              Возраст
+                            </legend>
+                            <div class="col-sm-8">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="age"
+                                  id="age1"
+                                  value="option1"
+                                  checked
+                                >
+                                <label class="form-check-label" for="age1">
+                                  18-25
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="age"
+                                  id="age2"
+                                  value="option2"
+                                >
+                                <label class="form-check-label" for="age2">
+                                  25-35
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="age"
+                                  id="age3"
+                                  value="option3"
+                                >
+                                <label class="form-check-label" for="age3">
+                                  &gt; 35
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                          <div class="row">
+                            <legend class="col-form-label col-sm-4 pt-0">
+                              Уровень английского
+                            </legend>
+                            <div class="col-sm-8">
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="english"
+                                  id="english1"
+                                  value="option1"
+                                  checked
+                                >
+                                <label class="form-check-label" for="english1">
+                                  A2
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="english"
+                                  id="english2"
+                                  value="option2"
+                                >
+                                <label class="form-check-label" for="english2">
+                                  A1
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="english"
+                                  id="english3"
+                                  value="option2"
+                                >
+                                <label class="form-check-label" for="english3">
+                                  B2
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="english"
+                                  id="english4"
+                                  value="option2"
+                                >
+                                <label class="form-check-label" for="english4">
+                                  B1
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="english"
+                                  id="english5"
+                                  value="option2"
+                                >
+                                <label class="form-check-label" for="english5">
+                                  C2
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="english"
+                                  id="english6"
+                                  value="option2"
+                                >
+                                <label class="form-check-label" for="english6">
+                                  C1
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Отменить
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Отправить
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                data-toggle="modal"
+                data-target="#myCours"
+              >
+                Записаться на курс
+              </button>
+
+              <div class="modal" id="myCours">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Запись на курс</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <form action="">
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="name4">Имя</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="name4"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="surname4">Фамилия</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="surname4"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput4">Почта</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput4"
+                            placeholder="name@example.com"
+                          >
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Отменить
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Отправить
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="escort" id="escort">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <h3 class="text-center mt-5 heading">
+              Alpari — квалифицированное сопровождение VIP клиентов
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-quote text-center mt-4">
+              &quot;Всякий раз, когда я вхожу в позицию, я знаю, где стоит мой
+              стоп.&quot;
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md">
+            <p class="text-justify">
+              Трейдинг — высокодоходная инвестиционная практика с большими
+              рисками. Допустим, у вас есть желание вступить в игру и получить
+              сверхприбыль, но времени или навыков лично заниматься торгами не
+              хватает.
+            </p>
+          </div>
+          <div class="col-md">
+            <p class="text-justify">
+              Мы предлагаем услуги профессиальных трейдеров и предоставляем
+              возможности вступления в ряд закрытых хедж-фондов. Плаформа Alpari
+              выструпает посредником для формирования доверительных партнерских
+              отношений между всеми сторонами.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm">
+            <p class="text-justify">
+              Для получения более детальной информации об это заполните форму:
+            </p>
+          </div>
+          <div class="col-sm d-flex justify-content-end">
+            <div>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                data-toggle="modal"
+                data-target="#myForm"
+              >
+                Форма
+              </button>
+
+              <div class="modal" id="myForm">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Форма</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <form action="">
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="name5">Имя</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="name5"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="surname5">Фамилия</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="surname5"
+                          >
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput5">Почта</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput5"
+                            placeholder="name@example.com"
+                          >
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Отменить
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Отправить
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news" id="news">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col">
+            <h3 class="text-center mt-5 heading">
+              Alpari — фронт актуальных новостей
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text-quote text-center mt-4">
+              &quot;Цена начинает реагировать задолго до новостей, новости или
+              плохие отчеты только усугубляют тренд.&quot;
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md d-flex justify-content-center align-items-center">
+            <img class="img-thumbnail news__img" src="./images/news.png" alt="news">
+          </div>
+          <div class="col-md">
+            <p class="text-justify">
+              Мир информационно перегружен, но для успешного трейдинга нужно
+              быть в курсе всего. Поэтому мы уделяем особое внимание новостному
+              разделу Alpari. Для специального ежедневного дайджеста наши
+              редакторы делают подборку экономических, финансовых и
+              бизнес-новостей со всего мира. Обзоры, аналитика, мнения — выжимки
+              главного в доступной форме и без воды. Вы узнаете о главных
+              событиях дня первыми через канал, который удобен именно для вас.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col d-flex justify-content-center">
+            <div class="icons">
+              <a class="mr-3" href="#"><i class="fab fa-telegram-plane fa-2x icons__tel"></i></a>
+              <a class="mr-3" href="#"><i class="fab fa-facebook fa-2x icons__fb"></i></a>
+              <a href="#"><i class="far fa-envelope fa-2x icons__email"></i></a>
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="community" id="community"></section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+   ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+   ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+   ></script>
+    <script src="https://kit.fontawesome.com/06769b1a56.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

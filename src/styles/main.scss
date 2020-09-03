@@ -1,7 +1,11 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "vars";
+@import "quote";
+@import "header";
+@import "news";
+@import "heading";
+@import "icons";
 
 body {
-  background: $c-gray;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }

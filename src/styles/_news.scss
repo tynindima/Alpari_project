@@ -1,0 +1,14 @@
+.news {
+  &__img {
+    max-height: 200px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news {
+    &__img {
+      height: 0;
+    }
+  }
+}
