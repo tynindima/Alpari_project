@@ -1,11 +1,45 @@
 @import "vars";
-@import "quote";
 @import "header";
+@import "quote";
 @import "news";
 @import "heading";
 @import "icons";
+@import "footer";
 
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  position: relative;
+  &__container {
+    height: 450px;
+    background-image: url("../images/header-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+  }
+
+  &__title-box {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    color: $header_text_color;
+  }
+
+  &__text {
+    color: $header_text_color;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 }

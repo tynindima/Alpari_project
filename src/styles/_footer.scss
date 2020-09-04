@@ -1,0 +1,19 @@
+.footer {
+  &__community {
+    padding-top: 70px;
+    background-image: url("../images/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $header_text_color;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+
+  &__bottom-text {
+    font-size: 12px;
+    margin: 0;
+  }
+}

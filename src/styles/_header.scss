@@ -1,31 +1,5 @@
 .header {
-  position: relative;
-  &__container {
-    height: 450px;
-    background-image: url("../images/header-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &__nav {
-    z-index: 2;
-  }
-
-  &__title-box {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  &__title {
-    color: $header_text_color;
-  }
-
-  &__text {
-    color: $header_text_color;
+  &__link {
     font-size: 14px;
-    letter-spacing: 1px;
   }
 }
